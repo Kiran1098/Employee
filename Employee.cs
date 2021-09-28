@@ -33,7 +33,7 @@ namespace EmployeeRecord
                 string EnterAddress = Console.ReadLine();
                 Console.WriteLine("Enter Employee Phone: ");
                 int EnterPhone = int.Parse(Console.ReadLine());
-                Console.WriteLine("Enter Employee Cpuntry: ");
+                Console.WriteLine("Enter Employee Country: ");
                 string EnterCountry = Console.ReadLine();
                 Console.WriteLine("Enter Employee Zip: ");
                 int EnterZip = int.Parse(Console.ReadLine());
@@ -50,9 +50,9 @@ namespace EmployeeRecord
                     });
                 Console.WriteLine("Details Added Successfully:");
             }
-            catch (Exception)
+            catch (Exception e)
             {
-
+                Console.WriteLine(e.ToString());
                 Console.WriteLine("Something went wrong, please try again");
                 AddEmployee();
 
