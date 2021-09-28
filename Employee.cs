@@ -61,7 +61,7 @@ namespace EmployeeRecord
         public void DisplayStudents()
         {
             Console.WriteLine("=====================================================");
-            Console.WriteLine("ld\t\tName\t\tAddress\t\tPhone\t\tCountry");
+            Console.WriteLine("ld\t\tName\t\tAddress\t\tPhone\t\tCountry\t\tZip");
             Employees.ForEach(Emp =>
             {
                 Console.WriteLine(
